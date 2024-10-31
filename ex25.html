@@ -10,13 +10,21 @@
 
     <script>
 
-        function exibindoFibonacci() {
-            for(var i = 1; i < 6; i++) {
-                var sequ = 0 + 1
+        function exibindoFibonacci(num) {
+            var x = 0
+            var y = 1
+            var sequenciaf = []
+            for (var i = 0; i <= num; i++) {
+                sequenciaf.push(x)
+                var calc = x + y
+                x = y
+                y = calc
             }
+            alert(sequenciaf)
         }
+            // alert(exibindoFibonacci(num))
 
-        // FAZER
+        // 26, 34, 36...
 
     </script>
     
