@@ -7,6 +7,26 @@
 </head>
 <!-- 18. Escreva uma função que retorne o menor de três números. -->
 <body>
+
+    <script>
+
+        var num1 = parseInt(prompt("Digite um número"))
+        var num2 = parseInt(prompt("Digite outro número"))
+        var num3 = parseInt(prompt("Digite outro número"))
+
+        function descobrindoomenor(num1, num2, num3) {
+            if (num1 < num2 && num1 < num3) {
+                alert('O número ' + num1 + ' é o menor dentre os três números')
+            } else if (num2 < num1 && num2 < num3) {
+                alert('O número ' + num2 + ' é o menor dentre os três números')
+            } else if (num3 < num1 && num3 < num2) {
+                alert('O número ' + num3 + ' é o menor dentre os três números')
+            }
+        }
+
+        alert(descobrindoomenor(num1, num2, num3))
+
+    </script>
     
 </body>
 </html>

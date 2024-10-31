@@ -9,5 +9,23 @@
 E (0-2). -->
 <body>
     
+    <script>
+
+        var nota = parseInt(prompt('Escreva uma nota entre 0 e 10.'))
+
+        if (nota == 9 || nota == 10) {
+            alert('Você tirou nota A (parabénss)! (; ')
+        } else if (nota == 8 || nota == 9) {
+            alert('Você tirou nota B! (; ')
+        } else if (nota == 6 || nota == 5) {
+            alert('Você tirou nota C (dá para recuperar!)')
+        } else if (nota == 4 || nota == 3) {
+            alert('Você tirou nota D ): ')
+        } else if (nota <= 2 && nota >= 0) {
+            alert('Você tirou nota E ): ')
+        }
+
+    </script>
+
 </body>
 </html>

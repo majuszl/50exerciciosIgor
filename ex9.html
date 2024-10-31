@@ -7,6 +7,22 @@
 </head>
 <!-- 9. Crie uma variável nome e, se ela não estiver vazia, exiba "Olá, [nome]". -->
 <body>
-    
+
+    <script>
+
+        var nome = prompt('Digite aqui seu nome, se quiser.')
+
+        function verificandovariavel(nome) {
+            if (nome.length > 0) { 
+                alert('Olá, ' + nome)
+            } else if (nome.length == 0) {
+                alert('A variável está vazia.')
+            }
+        }
+
+        alert(verificandovariavel(nome))
+
+    </script>
+
 </body>
 </html>

@@ -8,5 +8,21 @@
 <!-- 12. Dada a idade de uma pessoa, exiba se ela é criança, adolescente, adulto ou idoso. -->
 <body>
     
+    <script>
+
+        var idade = parseInt(prompt('Digite sua idade, por favor.'))
+
+        if (idade <= 12) {
+            alert('Você é criança! (; ')
+        } else if (idade > 12 && idade < 18) {
+            alert('Você é adolescente! (; ')
+        } else if (idade >= 18 && idade < 60) {
+            alert('Você é adulto!')
+        } else if (idade > 60) {
+            alert('Você é idoso! (;')
+        }
+
+    </script>
+
 </body>
 </html>
