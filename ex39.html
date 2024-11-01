@@ -9,9 +9,18 @@
 <body>
 
     <script>
+        var array = ["Eu", "vou", "ao", "SENAI"]
+        alert('Essa é a array original: ' + array)
 
-        
-
+            function retornandoStringMaiuscula(array) {
+                var result = []
+                for (var i = 0; i < array.length; i++) {
+                    result.push(array[i].toUpperCase())
+                }
+                return result
+            }
+            var result = retornandoStringMaiuscula(array)
+            alert(result)
     </script>
     
 </body>

@@ -9,9 +9,17 @@
 <body>
 
     <script>
-
-        
-
+        var array = ["Eu ", "vou ", "ao ", "SENAI."]
+            
+        function concatenandoarray(array) {
+                var result = ""
+                for (var i = 0; i < array.length; i++) {
+                    result += array[i]
+                }
+                return result
+            }
+            var result = concatenandoarray(array)
+            alert(result)
     </script>
     
 </body>

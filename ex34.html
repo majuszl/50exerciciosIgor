@@ -11,10 +11,27 @@
     <script>
 
     var array = [1, 2, 3, 4, 5, 5]
+    alert('Este é o array original.' + array)
 
-    // FAZER
+    function removendoduplicacao(array) {
+        for(var i = 0; i < array.length; i++) {
+            for(var x = i + 1; x < array.length; x++) {
+                if (array[i] == array[x]) {
+                    array.splice(x, 1)
+                    x--
+                } else {
+                    continue
+                }
+            }
+        }
+
+        return("Array sem valores duplicados: " + array)
+    }
+
+    alert(removendoduplicacao(array))
 
     </script>
+
     
 </body>
 </html>

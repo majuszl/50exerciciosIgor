@@ -9,9 +9,25 @@
 <body>
 
     <script>
+        var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        alert('Este é o array original: ' + array + ' e você sabe que o elemento maior é 10. Mas o segundo maior é...')
 
-        
+            function retornandosegundo(array) {
+                var maior = -1
+                var segundo = -1
+                for (var i of array) {
+                    if (i > maior) {
+                        segundo = maior
+                        maior = i
+                    }
+                    else if (i > segundo && i < maior) {
+                        segundo = i
+                    }
+                }
+                return segundo
+            }
 
+            alert(retornandosegundo(array))
     </script>
     
 </body>

@@ -10,8 +10,24 @@
 
     <script>
 
-        
+        var array = ["Eu", "vou", "ao", "SENAI"]
+        alert('Este é o array original: ' + array)
 
+        var busca = prompt('O índice de qual palavra você deseja buscar? ')
+        var ind = -1
+        
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] === busca) {
+                ind = i
+                break
+            }
+        }
+        if (ind !== -1) {
+            alert("O índice de " + busca + " é: " + ind)
+        }
+        else {
+            alert(busca + "não foi encontrado")
+        }
     </script>
     
 </body>
