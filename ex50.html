@@ -10,7 +10,21 @@ uma string com o nome e o preço formatado. -->
 <body>
 
     <script>
+        const produto = {
+            nome: 'Pequeno príncipe',
+            tipo: 'Livro',
+            preco: 40.00
+        }
 
+        function formatandoString(produto) {
+            for (chave in produto) {
+                string = String(chave) 
+            }
+            return('Produto: ' + produto.nome + ' Preço: ' + produto.preco + ' reais')
+        }
+
+        var resultado = formatandoString(produto)
+        alert(resultado)
 
     </script>
     
