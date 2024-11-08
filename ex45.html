@@ -10,6 +10,19 @@
 
     <script>
 
+        var idades = [10, 11, 12, 13, 14, 15]
+        var soma = 0
+
+        function calculandomedia(idades) {
+            for (var i = 0; i < idades.length; i++) {
+            soma = idades[i] + soma
+            }
+            soma = soma / 6
+            return(soma)
+        }
+
+        alert(calculandomedia(idades))
+
         
 
     </script>

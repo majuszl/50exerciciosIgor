@@ -10,8 +10,21 @@
 
     <script>
 
-        
+        const pessoa = {
+            nome: 'Maju',
+        }
 
+        function verificarPropriedade(obj, prop) {
+            if (prop in obj) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        verificarPropriedade(pessoa, "nome") // true
+        verificarPropriedade(pessoa, "idade") // false
+    
     </script>
     
 </body>
